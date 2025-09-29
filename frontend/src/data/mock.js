@@ -5,7 +5,7 @@ export const portfolioData = {
     description: "I build scalable systems and AI-powered tools that turn research into real-world impact. From healthcare AI to distributed systems, I focus on results, reliability, and user experience.",
     socialLinks: {
       resume: "/resume.pdf",
-      github: "https://github.com/snigdhaghoshdastidar",
+      github: "https://github.com/snigdhaghosh",
       linkedin: "https://linkedin.com/in/snigdhaghoshdastidar"
     }
   },
@@ -147,8 +147,8 @@ export const portfolioData = {
 
   contact: {
     title: "Let's connect!",
-    github: "https://github.com/snigdha",
-    linkedin: "https://linkedin.com/in/snigdha-dastidar", 
-    email: "snigdha@example.com"
+    github: "https://github.com/snigdhaghosh",
+    linkedin: "https://linkedin.com/in/snigdhaghoshdastidar", 
+    email: "snigdha.gdastidar@gmail.com"
   }
 };

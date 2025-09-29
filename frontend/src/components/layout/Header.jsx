@@ -62,7 +62,7 @@ const Header = () => {
               variant="ghost" 
               size="sm"
               className="text-[#001219] hover:bg-[#94D2BD]/20 hover:text-[#005F73]"
-              onClick={() => window.open('https://github.com/snigdha', '_blank')}
+              onClick={() => window.open('https://github.com/snigdhaghosh', '_blank')}
             >
               <Github className="w-4 h-4" />
             </Button>
@@ -70,7 +70,7 @@ const Header = () => {
               variant="ghost" 
               size="sm"
               className="text-[#001219] hover:bg-[#94D2BD]/20 hover:text-[#005F73]"
-              onClick={() => window.open('https://linkedin.com/in/snigdha-dastidar', '_blank')}
+              onClick={() => window.open('https://linkedin.com/in/snigdhaghoshdastidar', '_blank')}
             >
               <Linkedin className="w-4 h-4" />
             </Button>

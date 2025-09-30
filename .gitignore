@@ -9,6 +9,13 @@ frontend/build/
 dist/
 .next/
 
+# Prevent manual build files in root (GitHub Actions handles deployment)
+/index.html
+/static/
+/asset-manifest.json
+/404.html
+/CNAME
+
 # Environment variables
 .env
 .env.local

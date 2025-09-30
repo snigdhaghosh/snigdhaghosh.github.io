@@ -41,6 +41,7 @@ jobs:
         cd frontend
         npm run build
         echo "snigdhaghosh.github.io" > build/CNAME
+        cp ../resume.pdf build/resume.pdf
         
     - name: Setup Pages
       uses: actions/configure-pages@v5

@@ -79,16 +79,24 @@ const HeroSection = ({ data }) => {
                 <div className="absolute top-10 right-10 w-40 h-40 bg-gradient-to-r from-[#EE9B00]/40 to-[#CA6702]/40 rounded-full animate-particle"></div>
                 <div className="absolute bottom-10 left-10 w-32 h-32 bg-gradient-to-r from-[#0A9396]/30 to-[#94D2BD]/30 rounded-full animate-pulse delay-1000"></div>
               </div>
+
+
+
               
               {/* Central Icon/Logo */}
               <div className="relative z-10 w-80 h-80 bg-gradient-to-br from-[#E9D8A6] via-[#94D2BD] to-[#0A9396] rounded-full flex items-center justify-center shadow-2xl animate-glow hover:shadow-[#0A9396]/50 transition-all duration-500">
+              {/* <div className="text-6xl font-bold text-[#001219] hover:scale-110 transition-transform duration-300 cursor-pointer">
+                {"{ SG }"}
+              </div> */}
                 <div className="w-64 h-64 bg-gradient-to-br from-white to-[#E9D8A6]/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                  <div className="text-6xl font-bold text-[#001219] hover:scale-110 transition-transform duration-300 cursor-pointer">
-                    {"{ SG }"}
-                  </div>
+                  <img
+                    src={require("../../data/" + "image.jpeg")}
+                    alt="Profile"
+                    className="w-48 h-48 rounded-full object-cover hover:scale-110 transition-transform duration-300 cursor-pointer"
+                  />
                 </div>
               </div>
-              
+
               {/* Floating Tech Icons */}
               <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-[#EE9B00] to-[#CA6702] rounded-xl flex items-center justify-center shadow-lg animate-float hover:scale-125 transition-transform cursor-pointer">
                 <Code2 className="w-8 h-8 text-white" />

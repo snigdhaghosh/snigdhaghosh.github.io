@@ -46,15 +46,15 @@ const ProjectsSection = ({ data, metrics }) => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16" ref={headerRef}>
-          <h2 className="text-4xl lg:text-5xl font-light text-[#001219] mb-6 scroll-fade-in">
+          <h2 className="text-4xl lg:text-5xl font-light text-[#001219] mb-6 scroll-fade-in visible">
             Featured Projects
           </h2>
-          <p className="text-lg text-[#001219]/70 max-w-3xl mx-auto scroll-slide-left">
+          <p className="text-lg text-[#001219]/70 max-w-3xl mx-auto scroll-slide-left visible">
             Showcasing impactful solutions at the intersection of AI, backend engineering, and user experience
           </p>
           
           {/* Overall Metrics Strip */}
-          <div className="flex flex-wrap items-center justify-center gap-8 mt-8 p-6 bg-gradient-to-r from-[#001219] to-[#005F73] rounded-2xl shadow-xl border border-[#94D2BD]/20 card-tilt scroll-slide-right" ref={metricsRef}>
+          <div className="flex flex-wrap items-center justify-center gap-8 mt-8 p-6 bg-gradient-to-r from-[#001219] to-[#005F73] rounded-2xl shadow-xl border border-[#94D2BD]/20 card-tilt scroll-slide-right visible" ref={metricsRef}>
             <div className="flex items-center gap-2 text-[#94D2BD]">
               <TrendingUp className="w-5 h-5 animate-pulse" />
               <span className="font-semibold text-lg">{metrics.accuracy}</span>
@@ -80,7 +80,7 @@ const ProjectsSection = ({ data, metrics }) => {
               <Card 
                 key={project.id} 
                 ref={projectRef}
-                className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 bg-white border-2 hover:border-[#0A9396]/30 card-tilt scroll-fade-in ${
+                className={`group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 bg-white border-2 hover:border-[#0A9396]/30 card-tilt scroll-fade-in visible ${
                   index === 0 ? 'lg:col-span-2' : ''
                 }`}
               >

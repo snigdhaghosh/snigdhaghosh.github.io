@@ -51,10 +51,10 @@ const SkillsSection = ({ data }) => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16" ref={headerRef}>
-          <h2 className="text-4xl lg:text-5xl font-light text-[#001219] mb-6 scroll-fade-in">
+          <h2 className="text-4xl lg:text-5xl font-light text-[#001219] mb-6 scroll-fade-in visible">
             Skills Snapshot
           </h2>
-          <p className="text-lg text-[#001219]/70 max-w-3xl mx-auto scroll-slide-right">
+          <p className="text-lg text-[#001219]/70 max-w-3xl mx-auto scroll-slide-right visible">
             Comprehensive expertise across the full technology stack
           </p>
         </div>
@@ -67,7 +67,7 @@ const SkillsSection = ({ data }) => {
               <Card 
                 key={index}
                 ref={cardRef}
-                className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 hover:rotate-2 bg-white border-2 hover:border-[#0A9396]/50 card-tilt scroll-fade-in"
+                className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 hover:rotate-2 bg-white border-2 hover:border-[#0A9396]/50 card-tilt scroll-fade-in visible"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
               <CardHeader className="text-center pb-4">
@@ -107,7 +107,7 @@ const SkillsSection = ({ data }) => {
 
         {/* Skills Summary */}
         <div className="mt-16 text-center" ref={summaryRef}>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto scroll-fade-in">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto scroll-fade-in visible">
             <div className="text-center p-6 bg-gradient-to-br from-[#BB3E03]/10 to-[#AE2012]/10 rounded-xl hover:scale-110 transition-transform cursor-pointer group">
               <div className="text-3xl font-bold text-[#BB3E03] mb-2 group-hover:animate-pulse">5+</div>
               <div className="text-sm text-[#001219]/70 group-hover:text-[#BB3E03] transition-colors">Programming Languages</div>

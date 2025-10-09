@@ -14,10 +14,10 @@ const ExperienceSection = ({ data }) => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16" ref={headerRef}>
-          <h2 className="text-4xl lg:text-5xl font-light text-white mb-6 scroll-fade-in">
+          <h2 className="text-4xl lg:text-5xl font-light text-white mb-6 scroll-fade-in visible">
             Experience Highlights
           </h2>
-          <p className="text-lg text-[#94D2BD] max-w-3xl mx-auto scroll-slide-left">
+          <p className="text-lg text-[#94D2BD] max-w-3xl mx-auto scroll-slide-left visible">
             Building impactful solutions across research, industry, and education
           </p>
         </div>
@@ -30,7 +30,7 @@ const ExperienceSection = ({ data }) => {
               <Card 
                 key={index}
                 ref={expRef}
-                className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 hover:rotate-1 bg-white/10 backdrop-blur-sm border-2 border-[#94D2BD]/20 hover:border-[#94D2BD]/60 card-tilt scroll-fade-in"
+                className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 hover:rotate-1 bg-white/10 backdrop-blur-sm border-2 border-[#94D2BD]/20 hover:border-[#94D2BD]/60 card-tilt scroll-fade-in visible"
               >
               <CardHeader className="pb-4">
                 <div className="flex items-start justify-between">

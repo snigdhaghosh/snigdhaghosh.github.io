@@ -37,17 +37,17 @@ const AboutSection = ({ data }) => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16" ref={headerRef}>
-          <h2 className="text-4xl lg:text-5xl font-light text-white mb-6 scroll-fade-in">
+          <h2 className="text-4xl lg:text-5xl font-light text-white mb-6 scroll-fade-in visible">
             About Me
           </h2>
-          <p className="text-lg text-[#94D2BD] max-w-2xl mx-auto scroll-slide-left">
+          <p className="text-lg text-[#94D2BD] max-w-2xl mx-auto scroll-slide-left visible">
             The intersection of passion, technology, and human impact
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center" ref={contentRef}>
           {/* Main About Text */}
-          <div className="lg:col-span-2 scroll-slide-right">
+          <div className="lg:col-span-2 scroll-slide-right visible">
             <Card className="bg-white/10 backdrop-blur-sm border-2 border-[#94D2BD]/30 shadow-2xl hover:shadow-[#94D2BD]/20 transition-all duration-500 card-tilt">
               <CardContent className="p-8">
                 <div className="prose prose-lg max-w-none">
@@ -80,14 +80,14 @@ const AboutSection = ({ data }) => {
           </div>
 
           {/* Highlights Grid */}
-          <div className="space-y-6 scroll-slide-left">
+          <div className="space-y-6 scroll-slide-left visible">
             {highlights.map((highlight, index) => {
               const cardRef = useScrollAnimation();
               return (
                 <Card 
                   key={index}
                   ref={cardRef}
-                  className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:rotate-1 bg-white/10 backdrop-blur-sm border-2 border-[#94D2BD]/20 hover:border-[#94D2BD]/60 card-tilt scroll-fade-in"
+                  className="group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:rotate-1 bg-white/10 backdrop-blur-sm border-2 border-[#94D2BD]/20 hover:border-[#94D2BD]/60 card-tilt scroll-fade-in visible"
                   style={{ animationDelay: `${index * 150}ms` }}
                 >
                   <CardContent className="p-6">

@@ -26,16 +26,26 @@ const ProjectsSection = ({ data, metrics }) => {
   const getTechStackColor = (tech) => {
     const colorMap = {
       'Python': 'bg-[#005F73] text-white',
-      'PyTorch': 'bg-[#CA6702] text-white', 
+      'PyTorch': 'bg-[#AE2012] text-white', 
       'TensorFlow': 'bg-[#BB3E03] text-white',
       'CUDA': 'bg-[#0A9396] text-white',
       'Docker': 'bg-[#94D2BD] text-[#001219]',
+      'Kubernetes': 'bg-[#005F73] text-white',
+      'FastAPI': 'bg-[#009485] text-white',
+      'PostgreSQL': 'bg-[#001219] text-white',
       'React.js': 'bg-[#EE9B00] text-white',
-      'Node.js': 'bg-[#AE2012] text-white',
+      'Node.js': 'bg-[#CA6702] text-white',
       'MongoDB': 'bg-[#9B2226] text-white',
+      'Redis': 'bg-[#AE2012] text-white',
+      'Nginx': 'bg-[#BB3E03] text-white',
       'JavaScript': 'bg-[#E9D8A6] text-[#001219]',
+      'WebRTC': 'bg-[#0A9396] text-white',
+      'Firebase': 'bg-[#EE9B00] text-white',
+      'WebSocket': 'bg-[#CA6702] text-white',
       'Flask': 'bg-[#005F73] text-white',
       'Apache Spark': 'bg-[#001219] text-white',
+      'Pandas': 'bg-[#005F73] text-white',
+      'Scikit-learn': 'bg-[#0A9396] text-white',
     };
     return colorMap[tech] || 'bg-[#94D2BD] text-[#001219]';
   };
@@ -47,7 +57,7 @@ const ProjectsSection = ({ data, metrics }) => {
         {/* Section Header */}
         <div className="text-center mb-16" ref={headerRef}>
           <h2 className="text-4xl lg:text-5xl font-light text-[#001219] mb-6 scroll-fade-in visible">
-            Featured Projects
+            My Work
           </h2>
           <p className="text-lg text-[#001219]/70 max-w-3xl mx-auto scroll-slide-left visible">
             Showcasing impactful solutions at the intersection of AI, backend engineering, and user experience

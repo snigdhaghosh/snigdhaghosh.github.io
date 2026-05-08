@@ -40,11 +40,13 @@ const TimelineItem = ({ item, index }) => {
           />
         </div>
         <div
-          className={`ml-14 md:ml-0 md:w-[45%] p-6 rounded-2xl transition-all duration-700 ease-out ${
+          className={`ml-14 md:ml-0 md:w-[45%] p-6 rounded-2xl transition-all duration-700 ease-out border${
             isLeft ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
           }`}
           style={{
             backgroundColor: 'rgba(19, 75, 66, 0.3)',
+            borderColor: 'rgba(128, 145, 125, 0.35)',
+            boxShadow: '0 8px 24px -10px rgba(0, 0, 0, 0.4)',
             opacity: visible ? 1 : 0,
             transform: visible
               ? 'translateX(0) translateY(0)'

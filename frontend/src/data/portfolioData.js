@@ -42,7 +42,7 @@ export const experience = [
     period: 'May 2024 - Present',
     duration: '2 yrs 1 mo',
     role: 'Machine Learning Researcher',
-    company: 'University of Illinois Chicago',
+    company: 'DREAMLab, University of Illinois Chicago',
     description: 'Computer vision and GenAI for medical image segmentation and automated diagnostics.',
     description: 'Building AI-driven medical imaging pipelines using computer vision and GenAI models for automated segmentation and diagnostics. Optimized GPU-accelerated training workflows and reduced manual review time through innovative model architectures and data augmentation techniques.',
     tags: ['PyTorch', 'TensorFlow', 'Docker', 'CUDA', 'GANs', 'Diffusion Models', 'MedSAM', 'MONAI'],
